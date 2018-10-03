@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LeftSection from './components/leftSection/LeftSection';
+import RightSection from './components/rightSection/RightSection';
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
+    const { backgroundColor, textColor, fontFamily } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app--component" style={{borderColor: textColor}}>
+        <header style={{backgroundColor, color: textColor, borderColor: textColor, fontFamily}}>
+          <h1> react redux theme changer </h1>
+        </header> 
+        <LeftSection />
+        <RightSection />
       </div>
     );
   }
 }
 
-export default App;
+function mapStateToProps ({ backgroundColor, textColor, fontFamily }) {
+  return { backgroundColor, textColor, fontFamily }
+}
+export default connect(mapStateToProps)(App);

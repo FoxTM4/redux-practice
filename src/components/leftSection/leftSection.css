@@ -1,0 +1,7 @@
+.left--section{
+    grid-area: left;
+    border-right: 1px solid var(--dark);
+    border-left: 1px solid var(--dark);
+    padding: 1rem 2rem;
+    text-align: left;
+    }

@@ -1,0 +1,5 @@
+.child--component {
+    border: 1px solid var(--dark);
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
