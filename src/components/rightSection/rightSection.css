@@ -2,5 +2,6 @@
     grid-area: right;
     border-right: 1px solid var(--dark);
     padding: 1rem 2rem;
-    background: var(--blue);
+    background: var(--light);
+    font-family: var(--font-1);
     }

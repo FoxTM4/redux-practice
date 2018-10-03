@@ -20,7 +20,7 @@ HEADER {
   grid-area: header;
   border: 1px solid var(--dark);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-2);
+  font-family: var(--font-1);
 }
 HR {
   border-color: var(--dark);
